@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family:"PT Sans" ;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body{
+  font-family: "PT Sans",sans-serif;
+  /* параметры шрифта используемые по умолчанию используем в блоке advanced */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.page_header{
+  color:#000000;
+  background-color: #ffffff;
+  height: 70px;
+}
+
+.navigation-link{
+  color:#000000;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.navigation-user-find{
+  height:18px;
+  width:18px;
+  background-image: url("../images/header-search.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.navigation-user-favorit{
+  height:18px;
+  width:18px;
+  background-image: url("../images/header-favorite.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.navigation-user-want-here{
+  height:37px;
+  width:160px;
+  background-color:#756157;
+  text-align: center;
+}
+
+.navigation-user-want-here-link{
+
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.promo{
+  /* знечение color и  background-color не вставляю так как текста в promo нет,
+    поэтому если картинка не загрузится все равно читать будет нечиго*/
+  background-image: url("../images/promo-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 485px;
+}
+
+.promo-devider{
+  background-image: url("../images/promo-devider.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 57px;
+}
+
+/* не задавал высоты для этого блока так как не знаю как буду центрировать между собой блоки */
+.advantages{
+ color:#000000;
+ background-color: #ffffff;
+ text-align: center;
+}
+
+.advantages-header-more{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-five-reasons{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  /*text-transform: capitalize;- не использую так как предлог "по" браузер провечатывает с большой буквы, что не соответствует макету */
+}
+
+.advantages-header{
+/* у номеров и description значения шрифтов по умолчанию из body поэтому не прописываем их отдельно еще раз  */
+ font-weight:700;
+ font-size: 24px;
+ line-height: 28px;
+ text-transform: uppercase;
+}
+
+.advantages-town-header, .advantages-there-devil-bridge-header {
+ color:#ffffff;
+ background-color: #82B3D3;
+}
+
+.advantages-real-town, .advantages-there-devil-bridge{
+ color:#ffffff;
+ background-color: #82B3D3;
+}
+.advantages-hotel, .advantages-suvenir, .advantages-area, .advantages-camper {
+ background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-road{
+ background-color:rgba(131, 179, 211, 0.2);
+}
+
+.find-hotel{
+  text-align: center;
+  height: 417px;
+}
+
+/* Блок заинтересовались или поиск гостиницы */
+.find-hotel-interest{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-style: normal;
+}
+
+.find-hotel-travel-date{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.find-hotel-btm{
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  width: 574px;
+  height: 60px;
+  color:#ffffff;
+  background-color:#756157;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.newsletter{
+  background-image: url("../images/newsletter-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 400px;
+  color:#ffffff;
+  background-color:#756157;
+}
+
+.newsletter-header{
+ font-weight: 700;
+ font-size: 30px;
+ line-height: 36px;
+}
+
+.newsletter-descr{
+ font-weight: 400;
+ font-size: 22px;
+ line-height: 26px;
+}
+/* этот блок непонятен */
+.newsletter-field{
+  font-family: inherit;
+  border-radius: 10px;
+  border:0;
+  background-color:#F2F2F2;
+  color:#000000;
+  height: 60px;
+  width: 600px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.newsletter-button{
+  font-family: inherit;
+  background-color:#82B3D3;
+  color:#ffffff ;
+  height: 60px;
+  width:200px;
+  border-radius: 10px;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.footer-page{
+  height: 120px;
+}
+
+.footer-vk-item{
+  background-image: url("../images/footer-vk.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 48px;
+}
+
+.footer-telegram-item{
+  background-image: url("../images/footer-telegram.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 48px;
+}
+
+.footer-youtube-item{
+  background-image: url("../images/footer-youtube.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 48px;
+}
+
+.telephone-number {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.html-academy-logo{
+  width: 115px;
+  height: 33px;
+}
+
+
