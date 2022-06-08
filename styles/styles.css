@@ -1,4 +1,4 @@
-@font-face {
+font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -14,7 +14,17 @@
   font-display: swap;
 }
 
-body{
+html {
+  height: 100%;
+}
+
+body {
+  /* обнулим внешние отступы, не будем использовать normalize.css */
+  display: flex;
+  margin:0;
+  padding: 0;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans",sans-serif;
   /* параметры шрифта используемые по умолчанию используем в блоке advanced */
   font-weight: 400;
@@ -24,13 +34,49 @@ body{
   background-color: #ffffff;
 }
 
-.page_header{
-  color:#000000;
-  background-color: #ffffff;
-  height: 70px;
+.main-container {
+  flex-grow: 1;
 }
 
-.navigation-link{
+.header-logo {
+  display: flex;
+  height: 70px;
+  margin-left: 70px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.page-header {
+  display: flex;
+  padding:0;
+  margin:0 auto;
+  width: 1200px;
+  color:#000000;
+  background-color: #ffffff;
+  height: 65px;
+  width: 1200px;
+}
+
+.navigation-list {
+  display: flex;
+  width: 530px;
+  list-style-type:none;
+  margin-left: 7px;
+}
+.navigation-item {
+ padding-left: 34px;
+}
+.navigation-list  .navigation-first-item {
+padding-left: 0px;
+}
+.navigation-link {
   color:#000000;
   background-color: #ffffff;
   font-weight: 700;
@@ -40,16 +86,25 @@ body{
   text-transform: capitalize;
   text-align: center;
 }
+.navigation-user {
+  display: flex;
+  width: 373px;
+  list-style-type:none;
+}
 
-.navigation-user-find{
-  height:18px;
-  width:18px;
+.navigation-user-item {
+  display: flex;
+}
+
+.navigation-user-find {
+  height: 18px;
+  width: 18px;
   background-image: url("../images/header-search.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-.navigation-user-favorit{
+.navigation-user-favorit {
   height:18px;
   width:18px;
   background-image: url("../images/header-favorite.svg");
@@ -57,15 +112,14 @@ body{
   background-repeat: no-repeat;
 }
 
-.navigation-user-want-here{
+.navigation-user-want-here {
   height:37px;
   width:160px;
   background-color:#756157;
   text-align: center;
 }
 
-.navigation-user-want-here-link{
-
+.navigation-user-want-here-link {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
@@ -74,7 +128,7 @@ body{
   line-height: 20px;
 }
 
-.promo{
+.promo {
   /* знечение color и  background-color не вставляю так как текста в promo нет,
     поэтому если картинка не загрузится все равно читать будет нечиго*/
   background-image: url("../images/promo-background.jpg");
@@ -83,7 +137,15 @@ body{
   height: 485px;
 }
 
-.promo-devider{
+.promo-welcome {
+  display:block;
+  margin: 0 auto;
+  padding: 57px;
+}
+
+/* пока не знаю как буду делитель вставлять в промо картинку чтобы она была выше и примыкала к
+подвалу этой промо картинки */
+.promo-devider {
   background-image: url("../images/promo-devider.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -91,27 +153,38 @@ body{
 }
 
 /* не задавал высоты для этого блока так как не знаю как буду центрировать между собой блоки */
-.advantages{
+.advantages-wrapper {
+ display: inline;
+ margin: 0 auto;
+ width: 1200px;
+ justify-content: flex-start;
+ flex-direction: column;
  color:#000000;
  background-color: #ffffff;
  text-align: center;
 }
 
-.advantages-header-more{
+.advantages-header-more {
+  display: block;
+  width: 620px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: auto;
+  padding: 63px 0 0 0;
 }
 
-.advantages-five-reasons{
+.advantages-five-reasons {
+  display: block;
   font-weight: 400;
+  padding: 31px;
   font-size: 22px;
-  line-height: 26px;
+  margin: auto;
   /*text-transform: capitalize;- не использую так как предлог "по" браузер провечатывает с большой буквы, что не соответствует макету */
 }
 
-.advantages-header{
+.advantages-header {
 /* у номеров и description значения шрифтов по умолчанию из body поэтому не прописываем их отдельно еще раз  */
  font-weight:700;
  font-size: 24px;
@@ -124,38 +197,66 @@ body{
  background-color: #82B3D3;
 }
 
-.advantages-real-town, .advantages-there-devil-bridge{
+.advantages-real-town, .advantages-there-devil-bridge {
  color:#ffffff;
  background-color: #82B3D3;
+ width: 400px;
+ height: 384px;
 }
+
 .advantages-hotel, .advantages-suvenir, .advantages-area, .advantages-camper {
+ width: 400px;
+ height: 384px;
  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-road{
+.advantages-road {
  background-color:rgba(131, 179, 211, 0.2);
+ width: 400px;
+ height: 384px;
 }
 
-.find-hotel{
+.advantages-food {
+  background-color:#ffffff;
+  width: 400px;
+  height: 384px;
+ }
+
+.advantages-house-street, .advantages-bridge {
+  height: 384px;
+  width: 800px;
+}
+
+.find-hotel {
   text-align: center;
   height: 417px;
 }
 
 /* Блок заинтересовались или поиск гостиницы */
-.find-hotel-interest{
+.find-hotel-interest {
+  display: block;
+  margin:auto;
+  padding:90px 0 0 0 ;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   font-style: normal;
 }
 
-.find-hotel-travel-date{
+.find-hotel-travel-date {
+  display: block;
+  width: 592px;
+  margin:auto;
+  padding: 29px 0 0 0;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
 }
 
-.find-hotel-btm{
+.find-hotel-btm {
+  border-radius: 5px;
+  display: block;
+  margin: 56px auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -166,9 +267,10 @@ body{
   background-color:#756157;
   border: 0;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.newsletter{
+.newsletter {
   background-image: url("../images/newsletter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -178,21 +280,28 @@ body{
   background-color:#756157;
 }
 
-.newsletter-header{
- font-weight: 700;
- font-size: 30px;
- line-height: 36px;
+.newsletter-header {
+  display: block;
+  margin:auto;
+  padding:94px 0 0 0 ;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }
 
-.newsletter-descr{
+.newsletter-descr {
+ display: block;
+ margin:auto;
  font-weight: 400;
  font-size: 22px;
  line-height: 26px;
+ width: 475px;
 }
-/* этот блок непонятен */
-.newsletter-field{
+
+.newsletter-field {
   font-family: inherit;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   border:0;
   background-color:#F2F2F2;
   color:#000000;
@@ -203,58 +312,99 @@ body{
   line-height: 21px;
 }
 
-.newsletter-button{
+.newsletter-form {
+   display: block;
+   margin: auto;
+   padding:29px;
+}
+
+.newsletter-field {
+  margin:46px 0 0 0 ;
+}
+
+.newsletter-button {
   font-family: inherit;
   background-color:#82B3D3;
   color:#ffffff ;
   height: 60px;
   width:200px;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   border: 0;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  cursor: pointer;
 }
 
-.footer-page{
+/* сделал три блока по края ширина по 120 пикселей */
+.footer-page {
+  display: flex;
+  margin:0 auto;
   height: 120px;
+  width: 1200px;
 }
 
-.footer-vk-item{
+.footer-social-list-wrapper {
+width:192px;
+}
+
+.footer-social-list {
+margin: 0;
+padding: 0;
+/* берем небольшой запас еще для одной иконки */
+margin-top: 58px;
+margin-left: 81px;
+list-style-type:none;
+}
+
+.footer-vk-item {
   background-image: url("../images/footer-vk.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 40px;
-  width: 48px;
+  height: 14px;
+  width: 24px;
+  cursor: pointer;
 }
 
-.footer-telegram-item{
+.footer-telegram-item {
   background-image: url("../images/footer-telegram.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 40px;
-  width: 48px;
+  height: 15px;
+  width: 16px;
+  cursor: pointer;
 }
 
-.footer-youtube-item{
+.footer-youtube-item {
   background-image: url("../images/footer-youtube.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 40px;
-  width: 48px;
+  height: 22px;
+  width: 17px;
+  cursor: pointer;
 }
 
 .telephone-number {
-  text-align: center;
+  display: flex;
+  margin: 45px auto;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
 }
 
-.html-academy-logo{
-  width: 115px;
-  height: 33px;
+.html-academy-link {
+  width: 192px;
 }
 
+.html-academy-logo{
+  display: flex;
+  margin:0;
+  margin-top: 48px;
+  margin-right: 70px;
+}
 
+.visually-hidden {
+  display: none;
+}
