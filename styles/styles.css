@@ -1,4 +1,4 @@
-font-face {
+@font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -7,11 +7,11 @@ font-face {
 }
 
 @font-face {
-  font-family:"PT Sans" ;
+  font-family: "PT Sans" ;
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
+  font-display: swap;"
 }
 
 html {
@@ -55,9 +55,8 @@ body {
 
 .page-header {
   display: flex;
-  padding:0;
-  margin:0 auto;
-  width: 1200px;
+  padding: 0;
+  margin: 0 auto;
   color:#000000;
   background-color: #ffffff;
   height: 65px;
@@ -67,15 +66,16 @@ body {
 .navigation-list {
   display: flex;
   width: 530px;
-  list-style-type:none;
+  list-style-type: none;
   margin-left: 7px;
 }
 .navigation-item {
  padding-left: 34px;
 }
-.navigation-list  .navigation-first-item {
-padding-left: 0px;
+.navigation-first-item {
+ padding-left: 0px;
 }
+
 .navigation-link {
   color:#000000;
   background-color: #ffffff;
@@ -89,7 +89,7 @@ padding-left: 0px;
 .navigation-user {
   display: flex;
   width: 373px;
-  list-style-type:none;
+  list-style-type: none;
 }
 
 .navigation-user-item {
@@ -105,16 +105,16 @@ padding-left: 0px;
 }
 
 .navigation-user-favorit {
-  height:18px;
-  width:18px;
+  height: 18px;
+  width: 18px;
   background-image: url("../images/header-favorite.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .navigation-user-want-here {
-  height:37px;
-  width:160px;
+  height: 37px;
+  width: 160px;
   background-color:#756157;
   text-align: center;
 }
@@ -138,7 +138,7 @@ padding-left: 0px;
 }
 
 .promo-welcome {
-  display:block;
+  display: block;
   margin: 0 auto;
   padding: 57px;
 }
@@ -150,6 +150,11 @@ padding-left: 0px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 57px;
+}
+
+.advantages-text {
+  width: 1200px;
+  height: 282px;
 }
 
 /* не задавал высоты для этого блока так как не знаю как буду центрировать между собой блоки */
@@ -166,45 +171,52 @@ padding-left: 0px;
 
 .advantages-header-more {
   display: block;
+  margin: 0 auto;
   width: 620px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: auto;
-  padding: 63px 0 0 0;
+  text-align: center;
+  margin-top: 63px;
 }
 
 .advantages-five-reasons {
   display: block;
+  margin: 0 auto;
   font-weight: 400;
-  padding: 31px;
   font-size: 22px;
-  margin: auto;
+  text-align: center;
+  margin-top: 31px;
   /*text-transform: capitalize;- не использую так как предлог "по" браузер провечатывает с большой буквы, что не соответствует макету */
 }
 
 .advantages-header {
 /* у номеров и description значения шрифтов по умолчанию из body поэтому не прописываем их отдельно еще раз  */
- font-weight:700;
+ font-weight: 700;
  font-size: 24px;
  line-height: 28px;
  text-transform: uppercase;
 }
 
-.advantages-town-header, .advantages-there-devil-bridge-header {
+.advantages-town-header,
+.advantages-there-devil-bridge-header {
  color:#ffffff;
  background-color: #82B3D3;
 }
 
-.advantages-real-town, .advantages-there-devil-bridge {
+.advantages-real-town,
+.advantages-there-devil-bridge {
  color:#ffffff;
  background-color: #82B3D3;
  width: 400px;
  height: 384px;
 }
 
-.advantages-hotel, .advantages-suvenir, .advantages-area, .advantages-camper {
+.advantages-hotel,
+.advantages-suvenir,
+.advantages-area,
+.advantages-camper {
  width: 400px;
  height: 384px;
  background-color: rgba(131, 179, 211, 0.12);
@@ -222,7 +234,8 @@ padding-left: 0px;
   height: 384px;
  }
 
-.advantages-house-street, .advantages-bridge {
+.advantages-house-street,
+.advantages-bridge {
   height: 384px;
   width: 800px;
 }
@@ -235,8 +248,8 @@ padding-left: 0px;
 /* Блок заинтересовались или поиск гостиницы */
 .find-hotel-interest {
   display: block;
-  margin:auto;
-  padding:90px 0 0 0 ;
+  margin: auto;
+  padding: 90px 0 0 0 ;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -246,7 +259,7 @@ padding-left: 0px;
 .find-hotel-travel-date {
   display: block;
   width: 592px;
-  margin:auto;
+  margin: auto;
   padding: 29px 0 0 0;
   font-weight: 400;
   font-size: 22px;
@@ -282,8 +295,8 @@ padding-left: 0px;
 
 .newsletter-header {
   display: block;
-  margin:auto;
-  padding:94px 0 0 0 ;
+  margin: auto;
+  padding: 94px 0 0 0 ;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -291,7 +304,7 @@ padding-left: 0px;
 
 .newsletter-descr {
  display: block;
- margin:auto;
+ margin: auto;
  font-weight: 400;
  font-size: 22px;
  line-height: 26px;
@@ -302,7 +315,7 @@ padding-left: 0px;
   font-family: inherit;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border:0;
+  border: 0;
   background-color:#F2F2F2;
   color:#000000;
   height: 60px;
@@ -315,11 +328,11 @@ padding-left: 0px;
 .newsletter-form {
    display: block;
    margin: auto;
-   padding:29px;
+   padding: 29px;
 }
 
 .newsletter-field {
-  margin:46px 0 0 0 ;
+  margin: 46px 0 0 0 ;
 }
 
 .newsletter-button {
@@ -327,7 +340,7 @@ padding-left: 0px;
   background-color:#82B3D3;
   color:#ffffff ;
   height: 60px;
-  width:200px;
+  width: 200px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 0;
@@ -341,13 +354,13 @@ padding-left: 0px;
 /* сделал три блока по края ширина по 120 пикселей */
 .footer-page {
   display: flex;
-  margin:0 auto;
+  margin: 0 auto;
   height: 120px;
   width: 1200px;
 }
 
 .footer-social-list-wrapper {
-width:192px;
+width: 192px;
 }
 
 .footer-social-list {
@@ -356,7 +369,7 @@ padding: 0;
 /* берем небольшой запас еще для одной иконки */
 margin-top: 58px;
 margin-left: 81px;
-list-style-type:none;
+list-style-type: none;
 }
 
 .footer-vk-item {
@@ -400,7 +413,7 @@ list-style-type:none;
 
 .html-academy-logo{
   display: flex;
-  margin:0;
+  margin: 0;
   margin-top: 48px;
   margin-right: 70px;
 }
