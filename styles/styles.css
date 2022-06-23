@@ -190,7 +190,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-align: center;
-   grid-column: 1/-1;
+  grid-column: 1/-1;
 }
 
 .advantages-house-street,
