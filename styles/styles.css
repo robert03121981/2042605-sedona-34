@@ -58,6 +58,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  height: 65px;
 }
 
 .main-container {
@@ -77,10 +78,6 @@ body {
   min-height: 65px;
 }
 
-.navigation {
-  height: 65px;
-}
-
 .navigation-list {
   display: flex;
   margin: 0;
@@ -92,8 +89,17 @@ body {
   list-style-type: none;
 }
 
+.navigation-first-item {
+  display: block;
+  border-bottom: 2px solid #756257;
+  padding-bottom: -2px;
+}
+
 .navigation-link {
+  display: block;
+  position: relative;
   padding-left: 34px;
+  padding-bottom: 24px;
   color: #000000;
   background-color: #ffffff;
   font-weight: 700;
@@ -460,8 +466,7 @@ body {
 
 .svg-vk:hover,
 .svg-telegram:hover,
-.svg-youtube:hover
-.svg-vk:focus,
+.svg-youtube:hover .svg-vk:focus,
 .svg-telegram:focus,
 .svg-youtube:focus {
   fill: #68A2CA;
@@ -485,31 +490,28 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
-  color:#000000;
+  color: #000000;
 }
 
-.html-academy-logo{
-  fill:#000000;
+.html-academy-logo {
+  fill: #000000;
 }
 
 .telephone-number:hover,
-.html-academy-logo:hover
-{
-  color:#756157;
+.html-academy-logo:hover {
+  color: #756157;
   fill: #756157;
 }
 
-.telephone-number:focus
-.html-academy-logo:focus {
-  color:#756157;
-  fill:#756157;
+.telephone-number:focus .html-academy-logo:focus {
+  color: #756157;
+  fill: #756157;
 }
 
 .telephone-number:active,
-.html-academy-logo:active
-{
-  color:rgba(117, 97, 87, 0.3);
-  fill::rgba(117, 97, 87, 0.3);
+.html-academy-logo:active {
+  color: rgba(117, 97, 87, 0.3);
+  fill: :rgba(117, 97, 87, 0.3);
 }
 
 .html-academy-link {
