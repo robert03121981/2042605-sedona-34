@@ -15,12 +15,12 @@
 }
 
 /* хотя так не разрешается делать по правилам html academy но ужасно не хочется для каждого тега h3 и p обнулять данные отступы */
-h3 {
+.heading-h3 {
   margin: 0;
   padding: 0;
 }
 
-p {
+.heading-p {
   margin: 0;
   padding: 0;
 }
@@ -50,11 +50,12 @@ body {
   height: 70px;
   margin-left: 70px;
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -74,27 +75,25 @@ body {
   color: #000000;
   background-color: #ffffff;
   min-height: 65px;
-  width: 1200px;
 }
 
 .navigation {
   height: 65px;
-  width: 1200px;
 }
 
 .navigation-list {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 13px;
+  padding-left: 13px;
   flex-wrap: wrap;
   min-width: 530px;
+  align-items: center;
   list-style-type: none;
 }
 
 .navigation-link {
-  display: block;
-  padding: 20px 17px;
+  padding-left: 34px;
   color: #000000;
   background-color: #ffffff;
   font-weight: 700;
@@ -107,9 +106,11 @@ body {
 .navigation-user {
   display: flex;
   width: 373px;
-  list-style-type: none;
   justify-content: right;
+  align-items: center;
+  padding-right: 70px;
 }
+
 
 .navigation-user-item {
   display: flex;
@@ -117,19 +118,11 @@ body {
 }
 
 .navigation-user-find {
-  height: 18px;
-  width: 18px;
-  background-image: url("../images/header-search.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  margin-right: 24px;
 }
 
 .navigation-user-favorit {
-  height: 18px;
-  width: 18px;
-  background-image: url("../images/header-favorite.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  margin-right: 32px;
 }
 
 .navigation-user-want-here {
@@ -137,6 +130,7 @@ body {
   height: 37px;
   width: 160px;
   background-color: #756157;
+
 }
 
 .navigation-user-want-here-link {
@@ -149,16 +143,27 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
 }
 
 .promo {
+  position: relative;
   /* знечение color и  background-color не вставляю так как текста в promo нет,
     поэтому если картинка не загрузится все равно читать будет нечиго*/
   background-image: url("../images/promo-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 485px;
+  z-index: 1;
+}
+
+.divider {
+  position: absolute;
+  background-image: url("../images/promo-devider.svg");
+  background-repeat: no-repeat;
+  height: 57px;
+  width: 1200px;
+  z-index: 2;
+  bottom: 0;
 }
 
 .promo-welcome {
@@ -186,7 +191,7 @@ body {
   display: grid;
   margin: 0 auto;
   width: 1200px;
-  grid-template-columns:400px 400px 400px;
+  grid-template-columns: 400px 400px 400px;
   color: #000000;
   background-color: #ffffff;
   text-align: center;
@@ -195,9 +200,8 @@ body {
 
 .advantages-house-street,
 .advantages-bridge {
-  grid-column:span 2;
+  grid-column: span 2;
 }
-
 
 .advantages-header-more {
   display: block;
@@ -348,9 +352,8 @@ body {
 }
 
 .newsletter {
-  background-image: url("../images/newsletter-background.jpg");
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background: #756157 url("../images/newsletter-background.jpg") no-repeat;
   text-align: center;
   height: 400px;
   color: #ffffff;
@@ -421,70 +424,98 @@ body {
   margin: 0 auto;
   height: 120px;
   width: 1200px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-social-list-wrapper {
   /* берем небольшой запас еще для одной иконки */
   display: flex;
-  width: 192px;
+  margin: 0;
+  padding: 0;
   padding-left: 70px;
-  align-items: center;
 }
 
 .footer-social-list {
   display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
 .footer-item {
-  margin-left: 14px;
+  padding-top: 12px;
 }
 
 .footer-vk-item {
-  background-image: url("../images/footer-vk.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height: 14px;
-  width: 24px;
-  cursor: pointer;
+  padding-left: 12px;
+}
+
+.svg-vk,
+.svg-telegram,
+.svg-youtube {
+  fill: #83B3D3;
+}
+
+.svg-vk:hover,
+.svg-telegram:hover,
+.svg-youtube:hover
+.svg-vk:focus,
+.svg-telegram:focus,
+.svg-youtube:focus {
+  fill: #68A2CA;
+}
+
+.svg-vk:active,
+.svg-telegram:active,
+.svg-youtube:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-telegram-item {
-  background-image: url("../images/footer-telegram.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height: 15px;
-  width: 16px;
-  cursor: pointer;
+  padding-left: 26px;
 }
 
 .footer-youtube-item {
-  background-image: url("../images/footer-youtube.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height: 22px;
-  width: 17px;
-  cursor: pointer;
+  padding-left: 26px;
 }
 
 .telephone-number {
-  display: flex;
-  align-items: center;
-  margin: 45px auto;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
+  color:#000000;
+}
+
+.html-academy-logo{
+  fill:#000000;
+}
+
+.telephone-number:hover,
+.html-academy-logo:hover
+{
+  color:#756157;
+  fill: #756157;
+}
+
+.telephone-number:focus
+.html-academy-logo:focus {
+  color:#756157;
+  fill:#756157;
+}
+
+.telephone-number:active,
+.html-academy-logo:active
+{
+  color:rgba(117, 97, 87, 0.3);
+  fill::rgba(117, 97, 87, 0.3);
 }
 
 .html-academy-link {
-  width: 192px;
-}
-
-.html-academy-logo {
   display: flex;
   margin: 0;
-  margin-top: 48px;
-  margin-right: 70px;
+  padding-right: 70px;
 }
 
 .visually-hidden {
