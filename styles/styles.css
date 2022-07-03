@@ -45,11 +45,11 @@ body {
   background-color: #ffffff;
 }
 
-.header-logo {
+.page-header-link {
   display: block;
   height: 70px;
   margin-left: 70px;
-  position: relative;
+  position: absolute;
   z-index: 100;
 }
 
@@ -57,8 +57,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
-  height: 65px;
+  padding-left: 243px;
 }
 
 .main-container {
@@ -73,9 +72,9 @@ body {
 .page-header {
   display: flex;
   margin: 0 auto;
+  width: 1200px;
   color: #000000;
   background-color: #ffffff;
-  width: 1200px;
 }
 
 .navigation-list {
@@ -84,23 +83,24 @@ body {
   padding: 0;
   padding-left: 13px;
   flex-wrap: wrap;
-  width: 500px;
+  min-width: 500px;
   align-items: center;
   list-style-type: none;
 }
 
 .navigation-link-underlined {
-  display: block;
+  display: flex;
   border-bottom: 2px solid #756257;
   padding-bottom: 17px;
 }
 
 .navigation-link {
-  display: block;
-  position: relative;
+  display: flex;
+  margin-right: 0;
+  padding: 0;
   padding-left: 34px;
-  padding-bottom: 19px;
-  padding-top: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   color: #000000;
   background-color: #ffffff;
   font-weight: 700;
@@ -110,8 +110,17 @@ body {
   text-transform: capitalize;
 }
 
+.navigation-link-underlined {
+  padding-top: 19px;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+}
+
 .navigation-user {
   display: flex;
+  margin: 0;
+  padding: 0;
   width: 373px;
   justify-content: right;
   align-items: center;
@@ -124,10 +133,12 @@ body {
 }
 
 .navigation-user-find {
+  margin-top: 5px;
   margin-right: 24px;
 }
 
 .navigation-user-favorit {
+  margin-top: 4px;
   margin-right: 32px;
 }
 
@@ -136,7 +147,6 @@ body {
   height: 37px;
   width: 160px;
   background-color: #756157;
-
 }
 
 .navigation-user-want-here-link {
@@ -368,7 +378,7 @@ body {
 
 .newsletter-header {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   padding: 94px 0 0 0;
   font-weight: 700;
   font-size: 30px;
@@ -401,14 +411,17 @@ body {
 .newsletter-form {
   display: block;
   margin: auto;
-  padding: 29px;
+  padding-top: 29px;
 }
 
 .newsletter-field {
+  padding:0;
   margin: 46px 0 0 0;
 }
 
 .newsletter-button {
+  padding: 0;
+  margin: 0;
   font-family: inherit;
   background-color: #82B3D3;
   color: #ffffff;
