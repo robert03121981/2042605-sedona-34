@@ -55,9 +55,9 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
+  justify-content: space-between;
   height: 65px;
 }
 
@@ -75,7 +75,7 @@ body {
   margin: 0 auto;
   color: #000000;
   background-color: #ffffff;
-  min-height: 65px;
+  width: 1200px;
 }
 
 .navigation-list {
@@ -84,22 +84,23 @@ body {
   padding: 0;
   padding-left: 13px;
   flex-wrap: wrap;
-  min-width: 530px;
+  width: 500px;
   align-items: center;
   list-style-type: none;
 }
 
-.navigation-first-item {
+.navigation-link-underlined {
   display: block;
   border-bottom: 2px solid #756257;
-  padding-bottom: -2px;
+  padding-bottom: 17px;
 }
 
 .navigation-link {
   display: block;
   position: relative;
   padding-left: 34px;
-  padding-bottom: 24px;
+  padding-bottom: 19px;
+  padding-top: 20px;
   color: #000000;
   background-color: #ffffff;
   font-weight: 700;
@@ -116,7 +117,6 @@ body {
   align-items: center;
   padding-right: 70px;
 }
-
 
 .navigation-user-item {
   display: flex;
@@ -511,7 +511,7 @@ body {
 .telephone-number:active,
 .html-academy-logo:active {
   color: rgba(117, 97, 87, 0.3);
-  fill: :rgba(117, 97, 87, 0.3);
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .html-academy-link {
