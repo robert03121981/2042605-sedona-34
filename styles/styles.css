@@ -14,7 +14,6 @@
   font-display: swap;
 }
 
-/* хотя так не разрешается делать по правилам html academy но ужасно не хочется для каждого тега h3 и p обнулять данные отступы */
 .heading-h3 {
   margin: 0;
   padding: 0;
@@ -147,6 +146,7 @@ body {
   height: 37px;
   width: 160px;
   background-color: #756157;
+  cursor: pointer;
 }
 
 .navigation-user-want-here-link {
@@ -155,10 +155,13 @@ body {
   align-items: center;
   text-decoration: none;
   color: #ffffff;
+  background-color:#756157;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  border:0;
+  cursor: pointer;
 }
 
 .promo {
@@ -350,7 +353,7 @@ body {
 }
 
 .find-hotel-btm {
-  border-radius: 5px;
+  border-radius: 4px;
   display: block;
   margin: 0 auto;
   margin-top: 56px;
@@ -415,13 +418,21 @@ body {
 }
 
 .newsletter-field {
-  padding:0;
-  margin: 46px 0 0 0;
+  padding: 0;
+  margin: 0;
+  margin-top: 46px;
+  margin-left: 200px;
+}
+
+.newletter-wrapper {
+  display: flex;
 }
 
 .newsletter-button {
+  display: block;
   padding: 0;
   margin: 0;
+  margin-top: 46px;
   font-family: inherit;
   background-color: #82B3D3;
   color: #ffffff;
