@@ -141,27 +141,35 @@ body {
   margin-right: 32px;
 }
 
-.navigation-user-want-here {
-  border-radius: 3px;
-  height: 37px;
-  width: 160px;
-  background-color: #756157;
-  cursor: pointer;
-}
-
 .navigation-user-want-here-link {
   display: flex;
   margin: 0 auto;
+  height: 37px;
+  min-width: 160px;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: #ffffff;
-  background-color:#756157;
+  background-color: #756157;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  border:0;
+  border: 0;
   cursor: pointer;
+  border-radius: 4px;
+}
+
+.navigation-user-want-here-link:hover,
+.find-hotel-btm:hover .navigation-user-want-here-link:focus,
+.find-hotel-btm:focus {
+  background-color: #615048;
+}
+
+.navigation-user-want-here-link:active,
+.find-hotel-btm:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .promo {
@@ -405,10 +413,14 @@ body {
   background-color: #F2F2F2;
   color: #000000;
   height: 60px;
-  width: 600px;
+  width: 578px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+#newsletter-email {
+  padding-left: 22px;
 }
 
 .newsletter-form {
@@ -448,7 +460,16 @@ body {
   cursor: pointer;
 }
 
-/* сделал три блока по края ширина по 120 пикселей */
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background-color: #68A2CA;
+}
+
+.newsletter-button:focus {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer-page {
   display: flex;
   margin: 0 auto;
