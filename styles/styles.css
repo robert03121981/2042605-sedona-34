@@ -128,7 +128,7 @@ body {
 .svg-find {
   display: flex;
   justify-content: center;
-  padding-right: 12px;
+  padding-right: 9px;
   padding-left: 12px;
 }
 
@@ -148,8 +148,8 @@ body {
   align-items: center;
   color: #ffffff;
   background-color: #7DB54F;
-  margin-left: 25px;
-  margin-top: -25px;
+  margin-left: 26px;
+  margin-top: -26px;
   width: 20px;
   height: 20px;
   font-weight: 400;
@@ -192,6 +192,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  padding: 9px 15px 8px 15px;
 }
 
 .promo {
@@ -218,7 +219,8 @@ body {
 .promo-welcome {
   display: block;
   margin: 0 auto;
-  padding: 57px;
+  padding:0;
+  padding-top: 51px;
 }
 
 /* пока не знаю как буду делитель вставлять в промо картинку чтобы она была выше и примыкала к
@@ -263,8 +265,9 @@ body {
   margin: 0 auto;
   font-weight: 400;
   font-size: 22px;
+  line-height: 26px;
   text-align: center;
-  padding-top: 31px;
+  padding-top: 32px;
   padding-bottom: 90px;
   /*text-transform: capitalize;- не использую так как предлог "по" браузер провечатывает с большой буквы, что не соответствует макету */
 }
@@ -283,14 +286,13 @@ body {
   padding: 0;
   color: #ffffff;
   background-color: #82B3D3;
-  padding: 92px 82px 30px;
+  padding: 92px 85px 30px;
 }
 
 .advantages-real-town,
 .advantages-there-devil-bridge {
   color: #ffffff;
   background-color: #82B3D3;
-  height: 384px;
 }
 
 .advantages-town-desc,
@@ -299,23 +301,22 @@ body {
 }
 
 .advantages-hotel,
-.advantages-suvenir,
+.advantages-souvenir,
 .advantages-area,
 .advantages-camper {
-  height: 384px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-hotel-picture,
 .advantages-food-picture,
-.advantages-souvenirs-picture {
-  padding-top: 80px;
-  padding-bottom: 30px;
+.advantages-souvenir-picture {
+  padding: 80px 161px 30px 163px;
+
 }
 
 .advantages-hotel-desc,
 .advantages-food-desc,
-.advantages-suvenir-desc {
+.advantages-souvenir-desc {
   padding: 30px 85px;
 }
 
@@ -333,14 +334,10 @@ body {
 
 .advantages-road {
   background-color: rgba(131, 179, 211, 0.2);
-
-  height: 384px;
 }
 
 .advantages-food {
   background-color: #ffffff;
-
-  height: 384px;
 }
 
 .advantages-house-street,
@@ -394,6 +391,7 @@ body {
   border: 0;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 12px 15px 12px 15px;
 }
 
 .newsletter {
