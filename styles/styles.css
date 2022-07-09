@@ -219,7 +219,7 @@ body {
 .promo-welcome {
   display: block;
   margin: 0 auto;
-  padding:0;
+  padding: 0;
   padding-top: 51px;
 }
 
@@ -282,11 +282,9 @@ body {
 
 .advantages-town-header,
 .advantages-there-devil-bridge-header {
-  margin: 0;
-  padding: 0;
   color: #ffffff;
   background-color: #82B3D3;
-  padding: 92px 85px 30px;
+  padding: 92px 114px 30px;
 }
 
 .advantages-real-town,
@@ -307,29 +305,34 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-hotel-picture,
-.advantages-food-picture,
-.advantages-souvenir-picture {
-  padding: 80px 161px 30px 163px;
+.advantages-hotel-picture {
+  padding: 77px 161px 30px 163px;
+}
 
+.advantages-food-picture {
+  padding: 78px 161px 30px 163px;
+}
+
+.advantages-souvenir-picture {
+  padding: 72px 161px 30px 163px;
 }
 
 .advantages-hotel-desc,
 .advantages-food-desc,
 .advantages-souvenir-desc {
-  padding: 30px 85px;
+  padding: 30px 85px 77px 85px;
 }
 
 .advantages-area-header,
 .advantages-road-header,
 .advantages-camper-header {
-  padding: 103px 85px 30px;
+  padding: 103px 110px 30px;
 }
 
 .advantages-area-descr,
 .advantages-road-descr,
 .advantages-camper-descr {
-  padding: 30px 85px;
+  padding: 30px 85px 102px;
 }
 
 .advantages-road {
@@ -347,7 +350,8 @@ body {
 
 .find-hotel {
   text-align: center;
-  height: 417px;
+  padding-top: 90px;
+  padding-bottom: 94px;
 }
 
 /* Блок заинтересовались или поиск гостиницы */
@@ -356,7 +360,6 @@ body {
   padding: 0;
   margin: 0;
   margin: 0 auto;
-  padding-top: 90px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -374,6 +377,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+
 }
 
 .find-hotel-btm {
@@ -395,10 +399,14 @@ body {
 }
 
 .newsletter {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-size: 100% auto;
   background: #756157 url("../images/newsletter-background.jpg") no-repeat;
   text-align: center;
-  height: 400px;
   color: #ffffff;
   background-color: #756157;
 }
@@ -408,7 +416,6 @@ body {
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  padding-top: 94px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -486,17 +493,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  height: 120px;
   justify-content: space-between;
-  align-items: center;
-}
-
-.footer-social-list-wrapper {
-  /* берем небольшой запас еще для одной иконки */
-  display: flex;
-  margin: 0;
-  padding: 0;
-  padding-left: 70px;
 }
 
 .footer-social-list {
@@ -504,12 +501,8 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  align-items: center;
-}
-
-.footer-item,
-.footer-vk-item {
-  padding-top: 12px;
+  padding-left: 70px;
+  padding-top: 32px;
 }
 
 .svg-vk,
@@ -532,9 +525,13 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
+.footer-vk-item,
 .footer-telegram-item,
 .footer-youtube-item {
-  padding-left: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 12px 13px 13px;
 }
 
 .telephone-number {
@@ -542,6 +539,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
+  padding-top: 45px;
 }
 
 .html-academy-logo {
@@ -566,8 +564,11 @@ body {
 }
 
 .html-academy-link {
-  display: flex;
+  display: block;
   margin: 0;
+  padding: 0;
+  padding-top: 48px;
+  padding-bottom: 38px;
   padding-right: 70px;
 }
 
