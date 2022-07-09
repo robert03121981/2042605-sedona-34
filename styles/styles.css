@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
 }
 
 .page-header-link {
@@ -211,7 +211,7 @@ body {
   background-image: url("../images/promo-devider.svg");
   background-repeat: no-repeat;
   height: 57px;
-  width: 1200px;
+  min-width: 1200px;
   z-index: 2;
   bottom: 0;
 }
@@ -223,16 +223,6 @@ body {
   padding-top: 51px;
 }
 
-/* пока не знаю как буду делитель вставлять в промо картинку чтобы она была выше и примыкала к
-подвалу этой промо картинки */
-.promo-devider {
-  background-image: url("../images/promo-devider.svg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  height: 57px;
-}
-
-/* не задавал высоты для этого блока так как не знаю как буду центрировать между собой блоки */
 .advantages-wrapper {
   display: grid;
   margin: 0 auto;
@@ -269,11 +259,9 @@ body {
   text-align: center;
   padding-top: 32px;
   padding-bottom: 90px;
-  /*text-transform: capitalize;- не использую так как предлог "по" браузер провечатывает с большой буквы, что не соответствует макету */
 }
 
 .advantages-header {
-  /* у номеров и description значения шрифтов по умолчанию из body поэтому не прописываем их отдельно еще раз  */
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -388,7 +376,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  width: 574px;
+  min-width: 574px;
   height: 60px;
   color: #ffffff;
   background-color: #756157;
@@ -468,7 +456,7 @@ body {
   background-color: #82B3D3;
   color: #ffffff;
   height: 60px;
-  width: 200px;
+  min-width: 200px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 0;
@@ -501,8 +489,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  padding-left: 70px;
-  padding-top: 32px;
+  padding-left: 71px;
 }
 
 .svg-vk,
@@ -525,13 +512,13 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.footer-vk-item,
-.footer-telegram-item,
-.footer-youtube-item {
+.footer-vk-link,
+.footer-telegram-link,
+.footer-youtube-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 13px 12px 13px 13px;
+  padding: 58px 12px 13px 13px;
 }
 
 .telephone-number {
