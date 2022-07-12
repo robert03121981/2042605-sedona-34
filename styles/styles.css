@@ -35,6 +35,8 @@ html {
 
 body {
   background-color: #F2F2F2;
+  margin: 0;
+  padding: 0;
 }
 
 .page-header-link {
@@ -167,16 +169,24 @@ body {
   padding-left: 20px;
 }
 
-.navigation-user-want-here-link:hover,
-.find-hotel-btm:hover .navigation-user-want-here-link:focus,
+.navigation-user-want-here-btm:hover,
+.find-hotel-btm:hover,
+.navigation-user-want-here-btm:focus,
 .find-hotel-btm:focus {
   background-color: #615048;
+  color: #FFFFFF;
 }
 
-.navigation-user-want-here-link:active,
+.navigation-user-want-here-btm:active,
 .find-hotel-btm:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-user-want-here-btm:disabled,
+.find-hotel-btm:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .navigation-user-want-here-btm {
@@ -202,8 +212,7 @@ body {
 
 .promo {
   position: relative;
-  /* знечение color и  background-color не вставляю так как текста в promo нет,
-    поэтому если картинка не загрузится все равно читать будет нечиго*/
+  background-color: #dcebf2;
   background-image: url("../images/promo-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -401,7 +410,7 @@ body {
   background: #756157 url("../images/newsletter-background.jpg") no-repeat;
   text-align: center;
   color: #ffffff;
-  background-color: #756157;
+  background-color: #395761;
 }
 
 .newsletter-header {
@@ -475,11 +484,17 @@ body {
 .newsletter-button:hover,
 .newsletter-button:focus {
   background-color: #68A2CA;
+  color: #FFFFFF;
 }
 
-.newsletter-button:focus {
+.newsletter-button:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter-button:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 .footer-page {
@@ -532,6 +547,7 @@ body {
   line-height: 40px;
   color: #000000;
   padding-top: 45px;
+  text-decoration: none;
 }
 
 .html-academy-logo {
@@ -544,7 +560,8 @@ body {
   fill: #756157;
 }
 
-.telephone-number:focus .html-academy-logo:focus {
+.telephone-number:focus,
+.html-academy-logo:focus {
   color: #756157;
   fill: #756157;
 }
