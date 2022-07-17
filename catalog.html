@@ -59,105 +59,62 @@
           </ul>
         </nav>
       </header>
-
+      <!-- Также незабыть прочитать заново по блокам какой блок чем обернуть или div или в секцию или eside -->
       <main class="main-container">
-        <h1 class="visually-hidden">Седона небольшой городок в Аризоне</h1>
-        <div class="promo">
-          <img src="images/promo-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону."
-            class="promo-welcome">
-          <div class="divider"></div>
+        <div class="promo-catalog">
+          <h1 class="hotel-sedone-header">Гостиницы Седоны</h1>
+          <div class="hotels">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"
+                fill="#fff" />
+            </svg>
+
+            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.05 4.07 1.25.67c-.2-.2-.6-.2-.9 0-.3.2-.2.6 0 .8l3.3 3-3.2 3c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z"
+                fill="#fff" />
+            </svg>
+
+            <h2 class="hotels-header">Гостиницы</h2>
+          </div>
+          <div class="filter-sedona-hotel">
+            <div class="infrastructure">
+              <h3 class="heading-h3">Инфраструктура:</h3>
+              <ul class="catalog-filter-infrastructure">
+                <li>
+                  <label>
+                    <input type="checkbox" name="swimming-pool" checked>Бассейн</label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="parking" checked>Парковка</label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="Wi-Fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </div>
+            <div class="type-of-housing">
+             <h3 class="heading-h3">Тип Жилья:</h3>
+             <ul list-type-of-housing>
+              <label>
+              <input type="radio" name="type-housing" checked>Гостиница</label>
+              <label>
+                <input type="radio" name="type-housing">Мотель</label>
+                <label>
+                  <input type="radio" name="type-housing">Апартаменты</label>
+             </ul>
+            </div>
+
+            <div class="price"></div>
+          </div>
         </div>
 
-        <section>
-          <div class="advantages-text">
-            <h2 class="advantages-header-more">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <h3 class="heading-h3 advantages-five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем
-              Гранд-Каньон!</h3>
-          </div>
-          <!--  Теги br задаю так требуется единообразие в проекте, в описании преимуществ невозможно вывести переносы строк по крайней мере правым и
-          левым отступом, в заголовке переносы строк привести в соответствии с макетом легко так как они состоят от одного или 4-х слов. -->
-          <div class="advantages-wrapper">
-            <div class="advantages-real-town">
-              <h3 class="heading-h3 advantages-header advantages-town-header">Настоящий городок</h3>
-              — №1 —
-              <p class="heading-p advantages-town-desc">Седона — не аттракцион для<br>
-                туристов, там течёт своя<br>
-                жизнь</p>
-            </div>
 
-            <div class="advantages-house-street">
-              <img src="images/advantages-siti.jpg" width="800" height="384" alt="город.">
-            </div>
-            <div class="advantages-hotel">
-              <img src="images/advantages-logo-hotel.svg" width="75" height="72" alt="отель."
-                class="advantages-hotel-picture">
-              <h3 class="heading-h3 advantages-header">Жилье</h3>
-              <p class="heading-p advantages-hotel-desc">Рекомендуем пожить<br>
-                в настоящем мотеле,
-                <br> всё как в кино!
-              </p>
-            </div>
-            <div class="advantages-food">
-              <img src="images/advantages-logo-food.svg" width="74" height="70" alt="еда."
-                class="advantages-food-picture">
-              <h3 class="heading-h3 advantages-header">ЕДА</h3>
-              <p class="heading-p advantages-food-desc">Всегда заказывайте<br>
-                топовый фирменный бургер,<br>
-                вы не разочаруетесь!</p>
-            </div>
-            <div class="advantages-souvenir">
-              <img src="images/advantages-logo-souvenir.svg" width="64" height="76" alt="Сувениры."
-                class="advantages-souvenir-picture">
-              <h3 class="heading-h3 advantages-header">Сувениры</h3>
-              <p class="heading-p advantages-souvenir-desc">Не только китайского,<br>
-                но и настоящего местного<br>
-                производства!
-              </p>
 
-            </div>
-            <div class="advantages-bridge">
-              <img src="images/advantages-bridge.jpg" width="800" height="384" alt="мост дьявола.">
-            </div>
-            <div class="advantages-there-devil-bridge">
-              <h3 class="heading-h3 advantages-header advantages-there-devil-bridge-header">Там есть мост дьявола</h3>
-              — №2 —
-              <p class="heading-p advantages-there-devil-bridge-header-desc">Да, по нему можно пройти!<br>
-                Если вы осмелитесь,<br>
-                разумеется</p>
-            </div>
-            <div class="advantages-area">
-              <h3 class="heading-h3 advantages-header advantages-area-header">Небольшая площадь</h3>
-              — №3 —
-              <p class="heading-p advantages-area-descr">Все достопримечательности<br>
-                находятся очень близко
-              </p>
-            </div>
-            <div class="advantages-road">
-              <h3 class="heading-h3 advantages-header advantages-road-header">Красивая дорога</h3>
-              — №4 —
-              <p class="heading-p advantages-road-descr">Ехать в Седону из Лас-Вегаса<br>
-                совсем не скучно!
-              </p>
-            </div>
-            <div class="advantages-camper">
-              <h3 class="heading-h3 advantages-header advantages-camper-header">МАЛО ТУРИСТОВ</h3>
-              — №5 —
-              <p class="heading-p advantages-camper-descr">Большинство едет в Гранд<br>
-                Каньон и толпится там
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <div class="find-hotel">
-          <h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
-          <em class="find-hotel-interest">ЗАИНТЕРЕСОВАЛИСЬ?</em>
-          <p class="heading-p find-hotel-travel-date">Укажите предполагаемые даты поездки,<br>
-            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="find-hotel-btm" type="button">Поиск гостиницы в седоне</button>
-        </div>
-
-        <section class="newsletter">
+        <section class="newsletter-catalog">
           <h2 class="newsletter-header">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <p class="heading-p newsletter-descr">
@@ -174,7 +131,7 @@
         <footer class="footer-page">
           <ul class="footer-social-list">
             <li>
-              <a class="footer-vk-link" href="https://vk.com/htmlacademy">
+              <a class="footer-vk-link" href="#">
                 <svg class="svg-vk" width="24" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M23.45 1.45c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V1.45c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67 1.78 1.75 2.07 2.53 3.08 2.53h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z" />
@@ -182,7 +139,7 @@
                 <span class="visually-hidden">В контакте</span></a>
             </li>
             <li>
-              <a class="footer-telegram-link" href="https://t.me/htmlacademy">
+              <a class="footer-telegram-link" href="#">
                 <svg class="svg-telegram" width="18" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16.79.6.84 6.75c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18l-7.68 6.92-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8C18.22.77 17.5.27 16.79.59Z" />
@@ -190,7 +147,7 @@
                 <span class="visually-hidden">Телеграм</span></a>
             </li>
             <li>
-              <a class="footer-youtube-link" href="https://youtube.com/user/htmlacademyru">
+              <a class="footer-youtube-link" href="#">
                 <svg class="svg-youtube" width="22" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M18.6 0H3.18C1.31 0 0 1.6 0 3.4v10.1C0 15.4 1.31 17 3.17 17h15.66c1.64 0 3.17-1.6 3.17-3.4V3.4C21.78 1.6 20.47 0 18.6 0ZM7.67 12.54V4.46L15 8.5l-7.33 4.04Z" />
