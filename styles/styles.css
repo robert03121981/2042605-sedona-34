@@ -239,13 +239,9 @@ body {
   padding: 35px 70px 70px 70px;
 }
 
-.catalog-filter-infrastructure {
+.filter-infrastructure-list,
+.type-of-housing-list {
   list-style-type: none;
-}
-
-.list-type-of-housing {
-   display: flex;
-   flex-direction:column;
 }
 
 .hotel-sedone-header {
@@ -254,16 +250,15 @@ body {
   line-height: 78px;
 }
 
-.hotels {
+.breadcrumbs {
+  display: block;
+  padding: 0;
+  margin: 0;
   padding-top: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
-
-.hotels svg + svg {
-  padding-left: 10px;
-  padding-right: 10px;
+  list-style-type: none;
 }
 
 .filter-sedona-hotel {

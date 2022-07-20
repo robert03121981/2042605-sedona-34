@@ -61,54 +61,99 @@
       </header>
       <!-- Также незабыть прочитать заново по блокам какой блок чем обернуть или div или в секцию или eside -->
       <main class="main-container">
+        <h1 class="visually-hidden">Гостиницы</h1>
         <div class="promo-catalog">
-          <h1 class="hotel-sedone-header">Гостиницы Седоны</h1>
-          <div class="hotels">
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"
-                fill="#fff" />
-            </svg>
+          <h2 class="hotel-sedone-header">Гостиницы Седоны</h2>
+          <!--Хлебные крошки -->
+          <ul class="breadcrumbs">
 
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z"
+                  fill="#fff"/></svg>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
             <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M5.05 4.07 1.25.67c-.2-.2-.6-.2-.9 0-.3.2-.2.6 0 .8l3.3 3-3.2 3c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z"
-                fill="#fff" />
-            </svg>
+              <path d="M5.05 4.07 1.25.67c-.2-.2-.6-.2-.9 0-.3.2-.2.6 0 .8l3.3 3-3.2 3c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z"
+                fill="#fff"/></svg>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
+            </li>
+         </ul>
 
-            <h2 class="hotels-header">Гостиницы</h2>
-          </div>
-          <div class="filter-sedona-hotel">
-            <div class="infrastructure">
-              <h3 class="heading-h3">Инфраструктура:</h3>
-              <ul class="catalog-filter-infrastructure">
-                <li>
+
+         <div class="filter-sedona-hotel">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul class="filter-infrastructure-list">
+                <li class="filter-infrastructure-item">
                   <label>
-                    <input type="checkbox" name="swimming-pool" checked>Бассейн</label>
+                    <input class="filter-swimming-pool" type="checkbox" name="swimming-pool" checked>Бассейн
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="parking" checked>Парковка</label>
+                <li class="filter-infrastructure-item">
+                  <label for="filter"></label>
+                  <input class="filter-parking" type="checkbox" name="parking" checkbox>Парковка
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="Wi-Fi">Wi-Fi</label>
+                <li class="filter-infrastructure-item">
+                  <label for="filter"></label>
+                  <input class="filter-parking" type="checkbox" name="parking" checkbox>Wi-Fi
                 </li>
               </ul>
-            </div>
-            <div class="type-of-housing">
-             <h3 class="heading-h3">Тип Жилья:</h3>
-             <ul list-type-of-housing>
-              <label>
-              <input type="radio" name="type-housing" checked>Гостиница</label>
-              <label>
-                <input type="radio" name="type-housing">Мотель</label>
-                <label>
-                  <input type="radio" name="type-housing">Апартаменты</label>
-             </ul>
-            </div>
+            </fieldset>
 
-            <div class="price"></div>
+           <fieldset>
+             <legend>Тип Жилья:</legend>
+            <ul class="type-of-housing-list">
+              <li class="filter-type-of-housing-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="hotels" checked>
+              Гостиница
+                </label>
+              </li>
+              <li class="filter-type-of-housing-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="motels">
+              Мотель
+                </label>
+              </li>
+              <li class="filter-type-of-housing-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="apartments">
+              Апартаменты
+                </label>
+              </li>
+            </ul>
+            </fieldset>
+<!-- Стоимость  -->
+            <fieldset class="hotels-searching-price">
+              <legend class="hotels-searching-heading">Стоимость, ₽:</legend>
+              <div class="input-container">
+                <label class="visually-hidden" for="min-value">от</label>
+                <input class="value value-from" type="number" id="min-value" name="" value="0">
+                <label class="visually-hidden" for="max-value">до</label>
+                <input class="value value-to" type="number" id="max-value" name="" value="9000">
+              </div>
+            </fieldset>
+            <!-- ползунок пока не знаю даже как сделатькнопка  -->
+            <!--  -->
+
+            <button class="apply-filter" type="submit">Применить</button>
+            <button class="reset-filter" type="submit">Сбросить</button>
+<!-- Идем к следующему блоку найдено Гостиниц:38 -->
+             <h3 class="headind-h3">Найдено Гостиниц</h3>
+
+
+
+
+
+
+
+
+
+
           </div>
         </div>
 
