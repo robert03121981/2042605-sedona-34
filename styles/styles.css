@@ -505,6 +505,14 @@ body {
   width: 475px;
 }
 
+.newletter-wrapper {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  padding-left: 200px;
+  padding-top: 46px;
+}
+
 .newsletter-field {
   display: block;
   font-family: inherit;
@@ -523,13 +531,6 @@ body {
   line-height: 21px;
 }
 
-.newletter-wrapper {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  padding-left: 200px;
-  padding-top: 46px;
-}
 
 .newsletter-button {
   display: block;
